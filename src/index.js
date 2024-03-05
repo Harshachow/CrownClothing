@@ -9,6 +9,8 @@ import { CartProvider } from './contexts/cart.context';
 
 import './index.scss';
 
+import {Elements} from '@stripe/react-stripe-js'
+import { stripePromise } from './utils/stripe/stripe.utils';
 const rootElement = document.getElementById('root');
 
 render(
@@ -17,7 +19,9 @@ render(
       <UserProvider>
         <CategoriesProvider>
           <CartProvider>
-            <App />
+            <Elements stripe={stripePromise}>
+             <App />
+            </Elements>
           </CartProvider>
         </CategoriesProvider>
       </UserProvider>

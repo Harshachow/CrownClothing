@@ -1,18 +1,20 @@
 import styled from 'styled-components';
 
 export const ProductCartContainer = styled.div`
+  
   width: 100%;
   display: flex;
   flex-direction: column;
   height: 350px;
   align-items: center;
   position: relative;
-
+  
   img {
     width: 100%;
     height: 95%;
     object-fit: cover;
     margin-bottom: 5px;
+    border-radius : 16px;
   }
 
   button {

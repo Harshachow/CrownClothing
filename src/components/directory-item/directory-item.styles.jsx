@@ -35,7 +35,7 @@ export const Body = styled.div`
 `;
 
 export const DirectoryItemContainer = styled.div`
-  min-width: 30%;
+  min-width: 45%;
   height: 240px;
   flex: 1 1 auto;
   display: flex;
@@ -44,7 +44,7 @@ export const DirectoryItemContainer = styled.div`
   border: 1px solid black;
   margin: 0 7.5px 15px;
   overflow: hidden;
-
+  border-radius : 16px;
   &:first-child {
     margin-right: 7.5px;
   }
